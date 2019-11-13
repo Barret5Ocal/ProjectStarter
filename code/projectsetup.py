@@ -2,6 +2,7 @@ import os
 import sys
 
 import filecontent
+import filefinder
 
 path = os.getcwd()
 print ("The current working directory is %s" % path)
@@ -60,3 +61,15 @@ f = open(path + projectFolder + "/shell.bat", "w+", encoding="utf-8")
 f.write(filecontent.VSBat)
 
 f.close()
+
+
+f = open(path + projectFolder + "/4ed.bat", "w+", encoding="utf-8")
+
+#filecontent.VSBat.encode("utf-8")
+path = filefinder.find_4ed()
+
+f.write("@echo off \nstart " + path + " -W")
+
+f.close()
+
+
