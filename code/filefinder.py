@@ -8,7 +8,7 @@ def find_file(root_folder, rex):
             result = rex.search(f)
             if result:
                 return(os.path.join(root, f))
-                #break # if you want to find only one
+                break # if you want to find only one
 
 """
 def find_file_in_all_drives(file_name):
