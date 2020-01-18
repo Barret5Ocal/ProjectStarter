@@ -4,7 +4,7 @@ import sys
 import filecontent
 import filefinder
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     path = os.getcwd()
     print ("The current working directory is %s" % path)
 
